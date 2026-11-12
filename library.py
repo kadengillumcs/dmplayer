@@ -42,4 +42,3 @@ class Library:
         removed_track = self.tracks.pop(track_id, None)
 
         return removed_track
-        
