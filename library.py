@@ -33,3 +33,13 @@ class Library:
         """
         tracks_list = list(self.tracks.values())
         return tracks_list
+
+    def remove_track(self, track_id):
+        """
+        Removes a Track by ID from library.
+        Returns removed Track or None if ID doesn't exist.
+        """
+        removed_track = self.tracks.pop(track_id, None)
+
+        return removed_track
+        
