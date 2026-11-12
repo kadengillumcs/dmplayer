@@ -26,3 +26,10 @@ class Library:
         Returns a Track if the ID exists and None if not.
         """
         return self.tracks.get(track_id, None)
+
+    def get_all_tracks(self):
+        """
+        Returns all Tracks in the library as a list.
+        """
+        tracks_list = list(self.tracks.values())
+        return tracks_list
