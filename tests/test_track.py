@@ -1,5 +1,7 @@
-from track import Track
 from datetime import date
+
+from track import Track
+
 
 def test_new_track():
     cobra = Track("Geese", "Cobra", 181)

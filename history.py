@@ -17,7 +17,7 @@ class TrackHistory:
         self.tail = None
         self.size = 0
 
-    def add_cur_track(self, track):
+    def add_current_track(self, track):
         """
         Adds a new track to the end of the history.
         """
