@@ -1,5 +1,5 @@
-from track import Track
 from library import Library
+from track import Track
 
 
 def test_add_track():
@@ -19,7 +19,7 @@ def test_get_track():
     library = Library()
     library.add_track(cobra)
 
-    assert library.get_track(1).artist == cobra.artist
+    assert library.get_track(1).artist == cobra.artist # type: ignore
     assert library.get_track(2) is None
 
 def test_get_all_tracks():
